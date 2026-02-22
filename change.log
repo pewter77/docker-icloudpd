@@ -1,3 +1,10 @@
+22/02/2026
+
+ - Missed a variable change with the "Some changes to the if/then/elif/else statements which capture user parameters" made on the 13th. Incorporated a PR from mmenanno on GitHub which fixes it
+ - Merged a PR from tinganhsu on GitHub which fixes a typo
+ - Merged another PR from mmenanno which adds the capability for the check_files function to detect new files in non-default libraries
+ - Merged a PR from pewter77 on GitHub which uses GitHub actions to build the containers and push them to Dockerhub. Pretty sure it's going to break my current local workflow for building, but I'll just have to figure something else out
+
 15/02/2026
 
  - More work on the expect script. I was never proficient with it, but ChatGPT got my back. Mint... It now reports back to main script so step towards goal of handling errors correctly. Hopefully it will mean "<user> auth" is retryable. Will test when my next auth is due, I just re-did them all two days ago though.
