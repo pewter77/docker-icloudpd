@@ -57,3 +57,5 @@ jobs:
             boredazfcuk/icloudpd:${{ steps.version.outputs.version_tag }}
             ghcr.io/boredazfcuk/icloudpd:latest
             ghcr.io/boredazfcuk/icloudpd:${{ steps.version.outputs.version_tag }}
+          cache-from: type=registry,ref=ghcr.io/boredazfcuk/icloudpd:buildcache
+          cache-to: type=registry,ref=ghcr.io/boredazfcuk/icloudpd:buildcache,mode=max

@@ -28,6 +28,6 @@ COPY profile /etc/profile
 
 HEALTHCHECK --start-period=10s --interval=1m --timeout=10s CMD /usr/local/bin/healthcheck.sh
   
-VOLUME "/config"
+VOLUME /config
 
 CMD /usr/local/bin/launcher.sh
