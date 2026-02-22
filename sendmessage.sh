@@ -91,7 +91,7 @@ else
    telegram_protocol="https"
 fi
 
-if [ "${telegram_server}" ]
+if [ -n "${telegram_server}" ]
 then
    telegram_base_url="${telegram_protocol}://${telegram_server}/bot${telegram_token}"
 else
@@ -99,7 +99,7 @@ else
 fi
 notification_url="${telegram_base_url}/sendMessage"
 
-if [ "${notification_title}" ]
+if [ -n "${notification_title}" ]
 then
    notification_title="${notification_title//[^a-zA-Z0-9_ ]/}"
 else
