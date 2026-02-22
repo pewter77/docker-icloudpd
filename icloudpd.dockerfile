@@ -30,4 +30,4 @@ HEALTHCHECK --start-period=10s --interval=1m --timeout=10s CMD /usr/local/bin/he
   
 VOLUME /config
 
-CMD /usr/local/bin/launcher.sh
+CMD ["/usr/local/bin/launcher.sh"]

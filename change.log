@@ -4,6 +4,9 @@
  - Merged a PR from tinganhsu on GitHub which fixes a typo
  - Merged another PR from mmenanno which adds the capability for the check_files function to detect new files in non-default libraries
  - Merged a PR from pewter77 on GitHub which uses GitHub actions to build the containers and push them to Dockerhub. Pretty sure it's going to break my current local workflow for building, but I'll just have to figure something else out
+ - A few changes to trigger GitHub automated builds like `if [ "${variable}" ]` to `if [ -n "${variable}" ]` for a bit more protection against created but empty variables.
+ - Change to the GitHub workflow to add build caching
+ - Change to us JSON parameters for th CMD launcher as it was generating a warning in GitHub actions coz I wasn't using that format for the launcher
 
 15/02/2026
 
