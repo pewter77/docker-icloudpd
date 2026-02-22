@@ -26,10 +26,6 @@ jobs:
           BUILD_VERSION=$(cat build_version.txt | tr -d '[:space:]')
           echo "version_tag=1.0.${BUILD_VERSION}" >> "$GITHUB_OUTPUT"
 
-      - name: Debug version
-        run: | 
-          echo "Tag is: '${{ steps.version.outputs.version_tag }}'"
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
